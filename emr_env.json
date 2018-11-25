@@ -12,7 +12,9 @@
                 "Classification": "export",
                 "Configurations": [],
                 "Properties": {
-                    "JAVA_HOME": "/usr/lib/jvm/java-1.8.0"
+                    "PYSPARK_PYTHON": "/opt/conda/bin/python",
+                    "PYSPARK_DRIVER_PYTHON": "/opt/conda/bin/jupyter",
+                    "PYSPARK_DRIVER_PYTHON_OPTS": "'notebook --no-browser --ip=$1'"
                 }
             }
         ],
