@@ -3,7 +3,7 @@
 #!/bin/bash
 
 sudo yum groupinstall -y 'Development Tools'
-sudo yum install -y git python36 python36-devel python36-pip
+sudo yum install -y git python36 python36-pip python36-devel
 
 sudo python36 -m pip install -U pip
 
@@ -11,6 +11,7 @@ sudo python36 -m pip install \
     paramiko nltk scipy scikit-learn pandas torch==0.4.1 tqdm cmake
 
 export PATH=$PATH:/usr/local/bin
+alias cmake=/usr/local/bin/cmake
 
 git clone https://github.com/kakao/khaiii
 cd khaiii
