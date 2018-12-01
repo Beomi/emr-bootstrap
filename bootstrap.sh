@@ -17,10 +17,10 @@ cd khaiii
 sudo python36 -m pip install -r requirements.txt
 mkdir build
 cd build
-/usr/local/bin/cmake ..
-make all
-make resource
-make install
-make package_python
+sudo /usr/local/bin/cmake ..
+sudo make all
+sudo make resource
+sudo make install
+sudo make package_python
 cd package_python
 sudo /usr/local/bin/pip3 install .
