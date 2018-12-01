@@ -3,21 +3,27 @@
         "Classification": "spark",
         "Properties": {
             "maximizeResourceAllocation": "true"
-        }
+        },
+        "Configurations": [
+            {
+                "Classification": "pyspark",
+                "Properties": {
+                    "python": "/opt/conda/bin/python"
+                }
+            }
+        ]
     },
     {
         "Classification": "spark-env",
         "Configurations": [
             {
                 "Classification": "export",
-                "Configurations": [],
                 "Properties": {
                     "PYSPARK_PYTHON": "/opt/conda/bin/python",
                     "PYSPARK_DRIVER_PYTHON": "/opt/conda/bin/jupyter",
                     "PYSPARK_DRIVER_PYTHON_OPTS": "'notebook --no-browser --ip=$1'"
                 }
             }
-        ],
-        "Properties": {}
+        ]
     }
 ]
