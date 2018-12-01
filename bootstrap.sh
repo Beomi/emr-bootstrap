@@ -18,7 +18,7 @@ cd khaiii
 sudo python36 -m pip install -r requirements.txt
 mkdir build
 cd build
-sudo /usr/local/bin/cmake ..
+sudo cmake ..
 sudo make all
 sudo make resource
 sudo make install
