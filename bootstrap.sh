@@ -15,6 +15,7 @@ sudo cp -r /usr/local/bin/* /usr/bin
 sudo wget https://s3.ap-northeast-2.amazonaws.com/simplelink-public-seoul/khaiii-emr-build.zip
 sudo unzip khaiii-emr-build.zip
 
+cd khaiii-emr-build
 sudo make install
 sudo make package_python
 cd package_python
