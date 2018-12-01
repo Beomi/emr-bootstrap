@@ -12,11 +12,15 @@ sudo python36 -m pip install \
 
 sudo cp -r /usr/local/bin/* /usr/bin
 
+# git clone https://github.com/kakao/khaiii
+mkdir khaiii
+cd khaiii
+
 sudo wget https://s3.ap-northeast-2.amazonaws.com/simplelink-public-seoul/khaiii-emr-build.zip
 sudo unzip khaiii-emr-build.zip
 
 cd khaiii-emr-build
-sudo make install
-sudo make package_python
-cd package_python
+# sudo make install
+# sudo make package_python
+# cd package_python
 sudo /usr/local/bin/pip3 install .
