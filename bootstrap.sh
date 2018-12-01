@@ -3,12 +3,12 @@
 #!/bin/bash
 
 sudo yum groupinstall -y 'Development Tools'
-sudo yum install -y git python36 python36-pip python36-devel cmake
+sudo yum install -y git python36 python36-pip python36-devel
 
 sudo python36 -m pip install -U pip
 
 sudo python36 -m pip install \
-    paramiko nltk scipy scikit-learn pandas torch==0.4.1 tqdm
+    paramiko nltk scipy scikit-learn pandas torch==0.4.1 tqdm cmake
 
 sudo cp -r /usr/local/bin/* /usr/bin
 
