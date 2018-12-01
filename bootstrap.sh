@@ -10,12 +10,14 @@ sudo python36 -m pip install -U pip
 sudo python36 -m pip install \
     paramiko nltk scipy scikit-learn pandas torch==0.4.1 tqdm cmake
 
+export PATH=$PATH:/usr/local/bin
+
 git clone https://github.com/kakao/khaiii
 cd khaiii
 sudo python36 -m pip install -r requirements.txt
 mkdir build
 cd build
-cmake ..
+python36 -m cmake ..
 make all
 make resource
 make install
