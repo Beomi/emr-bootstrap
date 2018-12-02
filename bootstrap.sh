@@ -22,5 +22,5 @@ sudo unzip khaiii-emr-build.zip
 cd khaiii-emr-build
 # sudo make install
 # sudo make package_python
-# cd package_python
+cd package_python
 sudo /usr/local/bin/pip3 install .
