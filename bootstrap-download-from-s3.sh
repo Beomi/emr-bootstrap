@@ -14,5 +14,7 @@ export PATH=$PATH:/usr/local/bin
 alias cmake=/usr/local/bin/cmake
 
 sudo wget https://s3.ap-northeast-2.amazonaws.com/simplelink-public-seoul/khaiii.tar.gz
-
 sudo tar -zxvf khaiii.tar.gz
+
+cd khaiii/package_python
+sudo /usr/local/bin/pip3 install .
