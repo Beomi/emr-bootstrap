@@ -1,13 +1,19 @@
 [
   {
-     "Classification": "spark-env",
-     "Configurations": [
-       {
-         "Classification": "export",
-         "Properties": {
-            "PYSPARK_PYTHON": "/usr/bin/python36"
-          }
-       }
+    "Classification": "spark-env",
+    "Configurations": [
+      {
+        "Classification": "export",
+        "Properties": {
+          "PYSPARK_PYTHON": "/usr/bin/python36"
+        }
+      }
     ]
+  },
+  {
+    "Classification": "livy-conf",
+    "Properties": {
+      "livy.server.session.timeout": "72h"
+    }
   }
 ]
