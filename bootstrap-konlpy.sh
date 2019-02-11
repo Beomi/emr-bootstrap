@@ -19,8 +19,8 @@ sudo yum install -y \
     python27-devel
 
 # Install Anaconda3
-cd /root && \
-    wget https://repo.anaconda.com/archive/Anaconda3-2018.12-Linux-x86_64.sh
+sudo cd /root && \
+    sudo wget https://repo.anaconda.com/archive/Anaconda3-2018.12-Linux-x86_64.sh
 
 sudo chmod +x /root/Anaconda3-2018.12-Linux-x86_64.sh
 sudo /root/Anaconda3-2018.12-Linux-x86_64.sh -b
@@ -29,9 +29,9 @@ sudo /root/Anaconda3-2018.12-Linux-x86_64.sh -b
 sudo curl -L https://raw.githubusercontent.com/konlpy/konlpy/master/scripts/mecab.sh | bash
 sudo /root/anaconda3/bin/python -m pip install konlpy
 # Install Mecab
-cd /tmp/mecab-python-0.996 && \
+sudo cd /tmp/mecab-python-0.996 && \
     sudo /root/anaconda3/bin/python /tmp/mecab-python-0.996/setup.py build
-cd /tmp/mecab-python-0.996 && \
+sudo cd /tmp/mecab-python-0.996 && \
     sudo /root/anaconda3/bin/python /tmp/mecab-python-0.996/setup.py install
 
 sudo echo "/usr/local/lib" > /etc/ld.so.conf
