@@ -26,6 +26,9 @@ RUN cd /tmp/mecab-python-0.996 && \
 RUN echo "/usr/local/lib" > /etc/ld.so.conf
 RUN ldconfig && ldconfig -p | grep libmecab
 
+# Other Libs
+RUN /root/anaconda3/bin/conda install -y gensim
+
 CMD ["/root/anaconda3/bin/ipython"]
 
 # from konlpy.tag import Mecab;mecab = Mecab()
