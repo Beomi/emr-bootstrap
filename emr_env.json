@@ -1,19 +1,33 @@
 [
-  {
-    "Classification": "spark-env",
-    "Configurations": [
-      {
-        "Classification": "export",
-        "Properties": {
-          "PYSPARK_PYTHON": "/usr/bin/python36"
+    {
+        "configurations": [
+            {
+                "classification": "export",
+                "properties": {
+                    "PYSPARK_PYTHON": "/root/anaconda3/bin/python"
+                }
+            }
+        ],
+        "classification": "spark-env",
+        "properties": {}
+    },
+    {
+        "classification": "livy-conf",
+        "properties": {
+            "livy.server.session.timeout": "72h"
         }
-      }
-    ]
-  },
-  {
-    "Classification": "livy-conf",
-    "Properties": {
-      "livy.server.session.timeout": "72h"
+    },
+    {
+        "classification": "spark-defaults",
+        "properties": {
+            "spark.sql.repl.eagerEval.enabled": "true"
+        }
+    },
+    {
+        "Classification": "jupyter-s3-conf",
+        "Properties": {
+            "s3.persistence.enabled": "true",
+            "s3.persistence.bucket": "beomi-emr-jupyterhub"
+        }
     }
-  }
 ]
